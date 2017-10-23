@@ -1,7 +1,7 @@
 {
   "name": "review_site",
   "version": "1.0.0",
-  "description": "",
+  "description": "We've seen _a lot_ today! Tonight's homework is going to practice everything we have seen.",
   "main": "app.js",
   "scripts": {
     "test": "mocha client/src/models/specs",
@@ -11,11 +11,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "body-parser": "^1.15.2",
     "mocha": "^3.0.2",
-    "webpack": "2.6.0"
-  }
+    "webpack": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielalewandowska/express-webpack-exercise.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gabrielalewandowska/express-webpack-exercise/issues"
+  },
+  "homepage": "https://github.com/gabrielalewandowska/express-webpack-exercise#readme"
 }
