@@ -11,6 +11,11 @@ app.get("/api/films", function(req, res){
   res.json(Films());
 });
 
+app.get("/api/films/:id", function(req, res){
+  var film = Films()[req.params.id];
+  res.json(film);
+});
+
 
 
 
