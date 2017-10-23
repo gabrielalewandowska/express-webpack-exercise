@@ -1,22 +1,14 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var Films = require("./client/src/models/films");
+// var Films = require("./client/src/models/films");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
 app.use(express.static('client/build'));
 
-app.get("/api/films", function(req, res){
-  res.json(Films());
-});
 
-app.get("/api/films/:id", function(req, res){
-  var film = Films()[req.params.id];
-  res.json(film);
-});
-
-
+var filmRouter = require('./controllers/films.js');
+app.use("/api/films", filmRouter);
 
 
 
