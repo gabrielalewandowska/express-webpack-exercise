@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 // var Films = require("./client/src/models/films");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+
+//PASSES A PATH TO DIRECOTRY YOU WANT TO BE "PUBLIC"
 app.use(express.static('client/build'));
 
 
